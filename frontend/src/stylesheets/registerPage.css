@@ -1,0 +1,108 @@
+
+
+.two-grid {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    margin-top: 2vw;
+}
+
+.registration-image {
+    width: 50%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.registration-form {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 8vw;
+    border-radius: 10px;
+    background: url("/images/regBcg.jpeg");
+    background-position: center;
+    background-size: cover;
+    color: #000;
+
+}
+
+.registration-form>form {
+    width: 35vw;
+    height: max-content;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+form>div {
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block: 0.5vw;
+}
+
+form>div>input {
+    width: 70%;
+    padding: 0.8vw;
+    margin-left: 20px;
+}
+
+.btn-submit {
+    width: 50%;
+    padding: 0.8vw;
+    font-size: 19px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-submit:active {
+    scale: 0.96;
+}
+
+.tag {
+    margin-block: 0.5vw;
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .two-grid {
+        flex-direction: column;
+    }
+
+    .registration-image {
+        width: 100%;
+    }
+
+    .registration-form {
+        width: 100%;
+        margin-top: 4vw; /* Adjust margin for smaller screens */
+        border-radius: 0; /* Modify border radius as needed */
+    }
+
+    .registration-form>form {
+        width: 80%; /* Adjust form width for smaller screens */
+    }
+
+    form>div>input {
+        width: 100%; /* Full width inputs */
+        margin-left: 0; /* Remove left margin for inputs */
+    }
+}
